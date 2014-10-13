@@ -103,7 +103,7 @@ module Bitcoin
 
       # previous output in hex
       def previous_output
-        @prev_out.reverse_hth
+        @prev_out_hex ||= @prev_out.reverse_hth
       end
 
       # check if input is coinbase
